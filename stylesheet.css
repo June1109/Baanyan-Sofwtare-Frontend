@@ -1,8 +1,8 @@
 body {
-    color: green;
+    color: rgb(15, 91, 135);
     font-family: Verdana, Arial, Geneva, Tahoma, sans-serif,;
     font-weight: normal;
-    background-color: #ffcf79;
+    background-color: #af79ff;
     font-size: 25px;
 }
 
@@ -17,11 +17,18 @@ h2 {
 }
 
 p.para1 {
-    color: blue;
+    color: rgb(112, 112, 190);
 }
 
 p.para2 {
-    color: purple;
+    width: 700px;
+    height: 150px;
+    background-color: antiquewhite;
+    color: rgb(128, 0, 28);
+    overflow: scroll;
+    position: relative;
+    /*overflow: hidden;
+    overflow: visible;*/
 }
 
 p.para3 {
@@ -44,6 +51,7 @@ p.para4{
     margin: 20px;
     margin-top: 50px;
     margin-left: 400px;
+    overflow: visible;
 }
 
 image {

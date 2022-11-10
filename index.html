@@ -3,7 +3,33 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- Adding jQuery Example-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $("p.para2").hide();
+          });
+          $("#show").click(function(){
+            $("p.para2").show();
+          });
+
+          $("#flip").click(function(){
+            $("#panel").slideDown(3000).slideUp(3000);
+            });
+        });
+    </script>
+<!--$("#flip").click(function(){
+    $("#panel").slideDown("slow");
+});-->
+
+    <!-- Adding Bootsrap Example -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
     <!-- <style>
         body {
             color: rgb(15, 91, 135);
@@ -17,27 +43,55 @@
 
 <body>
 
-    <h1> This is car site </h1>
-
-    <p class="para1"> What is your favoirte car make? Let me go ahead and show my favoirte car.</p>
-
-    <div class="image">
-        <a> <img src="c300.jpg"> </a>
+    <div class="jumbotron text-center">
+        <h1> This is car site </h1>
+        <p class="para1"> What is your favoirte car make? Let me go ahead and show my favoirte car.</p>
     </div>
 
-    <h2> This is sectopn on C300 </h2>
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Picture of C300</h3>
+            <a> <img src="c300.jpg"> </a>
+        </div>
+        <div class="col-sm-6">
+            <h3>Logo of Mercedes-Benz</h3>
+            <a><img src="c300_2.jpg"></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Why C300?</h3>
+                <p> Initially available in sedan and a station wagon configurations, a fastback coupé (SportCoupé) variant followed and was later renamed to Mercedes-Benz CLC-Class.
+                    It remained in production until 2011 when a new W204 C-Class coupé replaced it for the 2012 model year. 
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3>About C300</h3>
+                <p class="para2"> The Mercedes-Benz C-Class is a series of compact executive cars produced by Mercedes-Benz Group AG.
+                    Introduced in 1993 as a replacement for the 190 (W201) range, the C-Class was the smallest model in the marque's line-up until the W168 A-Class arrived in 1997.
+                    The C-Class has been available with a "4MATIC" four-wheel drive option since 2002. The third generation (W204) was launched in 2007 while the current W206 generation was launched in 2021.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3>More...</h3>
+                <p> The W205 C-Class was launched at the 2014 North American International Auto Show. The new structure was significantly lighter using aluminium and high strength steel extensively throughout the body,
+                    resulting in a 100-kilogram (220 lb) weight decrease.[10] The Mercedes-Benz C-Class 205 chassis spawned four C-Class bodystyles; sedan (W205), wagon (S205), coupe (C205), and cabriolet (A205).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h2> This is a section on C300 </h2>
+
+    <button id="hide">Hide</button>
+
+    <button id="show">Show</button>
+
+    <p style="color:aqua; font-size: 25px;"> For Any More Please Contact Us Directly </p>
+
+    <div id="flip" style="font-size: 25px;">Click for Email Address</div>
+    <div id="panel" style="font-size: 25px;">Mercedes-Benz@gmail.com</div>
 
 </body>
-
-<p class="para2"> The Mercedes-Benz C-Class is a series of compact executive cars produced by Mercedes-Benz Group AG.
-    Introduced in 1993 as a replacement for the 190 (W201) range, the C-Class was the smallest model in the marque's line-up until the W168 A-Class arrived in 1997.
-    The C-Class has been available with a "4MATIC" four-wheel drive option since 2002. The third generation (W204) was launched in 2007 while the current W206 generation was launched in 2021.
-</p>
-
-<p class="para3"> Initially available in sedan and a station wagon configurations, a fastback coupé (SportCoupé) variant followed and was later renamed to Mercedes-Benz CLC-Class.
-    It remained in production until 2011 when a new W204 C-Class coupé replaced it for the 2012 model year. 
-</p>
-<p style="color:aqua; font-size: 25px;"> Example of Inline Style </p>
-<p class="para4"> The W205 C-Class was launched at the 2014 North American International Auto Show. The new structure was significantly lighter using aluminium and high strength steel extensively throughout the body,
-    resulting in a 100-kilogram (220 lb) weight decrease.[10] The Mercedes-Benz C-Class 205 chassis spawned four C-Class bodystyles; sedan (W205), wagon (S205), coupe (C205), and cabriolet (A205).
-</p>

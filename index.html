@@ -63,7 +63,7 @@
         <div class="row">
             <div class="col-sm-4">
                 <h3>Why C300?</h3>
-                <p> Initially available in sedan and a station wagon configurations, a fastback coupé (SportCoupé) variant followed and was later renamed to Mercedes-Benz CLC-Class.
+                <p id="para1"> Initially available in sedan and a station wagon configurations, a fastback coupé (SportCoupé) variant followed and was later renamed to Mercedes-Benz CLC-Class.
                     It remained in production until 2011 when a new W204 C-Class coupé replaced it for the 2012 model year. 
                 </p>
             </div>
@@ -93,5 +93,22 @@
 
     <div id="flip" style="font-size: 25px;">Click for Email Address</div>
     <div id="panel" style="font-size: 25px;">Mercedes-Benz@gmail.com</div>
+
+    <p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+    <button id="myBtn">Try it</button>
+    <button id="newPara1">Change First Paragraph</button>
+
+    <p id="demo"></p>
+        <script>
+            document.getElementById("myBtn").addEventListener("click", displayDate);
+            function displayDate() {
+                document.getElementById("demo").innerHTML = Date();
+            }
+            document.getElementById("newPara1").addEventListener("click", changeContext);
+            function changeContext() {
+                document.getElementById("para1").innerHTML = "Trying to change context";
+            }
+        </script>
 
 </body>
